@@ -32,5 +32,19 @@ public class Main5 {
         int resultado = op.aplicar(a,b);
 
         System.out.println("Resultado: " + resultado);
+
+        System.out.println("========================= EJERCICIO 5========================");
+
+        int code = 409;
+
+        HttpStatus status = HttpStatus.fromCode(code);
+
+        if(status != null){
+            System.out.println("Code: "+ status.getCode());
+            System.out.println("Status "+ status);
+            System.out.println("Descripcion: "+ status.getDescripcion());
+        }else {
+            System.out.println("Codigo invalido " + code);
+        }
     }
 }
