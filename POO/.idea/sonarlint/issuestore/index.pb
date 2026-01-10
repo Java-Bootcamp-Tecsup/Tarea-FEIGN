@@ -47,3 +47,11 @@ T
 $src/abstracto/NotificacionEmail.java,f\5\f589e8db377a889542926af6c25d7971b414717d
 H
 src/abstracto/Main4.java,8\a\8abe335ec449c17678d2c799545c1e77e33cb2fe
+B
+src/enums/Dia.java,c\5\c5e9987a8fd1ebfc6b2a19133f30f4e460eecf23
+D
+src/enums/Main5.java,0\f\0f782a0086bc58b604d5eac9b90f3470073cac97
+B
+src/enums/Rol.java,d\1\d15502ec43354fee869557f994de8c24d69b4b33
+J
+src/enums/NivelAcceso.java,3\e\3ee06424cc1e27e092ef28e761c31091233e72b1
