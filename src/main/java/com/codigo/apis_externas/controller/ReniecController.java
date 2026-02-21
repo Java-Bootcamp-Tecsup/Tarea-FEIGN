@@ -1,5 +1,6 @@
 package com.codigo.apis_externas.controller;
 
+import com.codigo.apis_externas.model.ReniecCambio;
 import com.codigo.apis_externas.model.ReniecPerson;
 import com.codigo.apis_externas.service.ReniecFeignService;
 import jakarta.validation.constraints.Pattern;
@@ -20,6 +21,11 @@ public class ReniecController {
     @GetMapping("/feign/{dni}")
     public ReniecPerson feign(@PathVariable @Pattern(regexp = "\\d{8}") String dni){
         return reniecFeignService.consultarYGuardar(dni);
+    }
+
+    @GetMapping("/feign/{currency}")
+    public ReniecCambio feignCambio(@PathVariable String currency){
+        return reniecFeignService.consultarYGuardarCambio(currency);
     }
 
 }

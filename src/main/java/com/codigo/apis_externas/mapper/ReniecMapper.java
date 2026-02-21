@@ -1,6 +1,8 @@
 package com.codigo.apis_externas.mapper;
 
+import com.codigo.apis_externas.dto.ReniecCambioResponse;
 import com.codigo.apis_externas.dto.ReniecDniResponse;
+import com.codigo.apis_externas.model.ReniecCambio;
 import com.codigo.apis_externas.model.ReniecPerson;
 
 public class ReniecMapper {
@@ -13,5 +15,14 @@ public class ReniecMapper {
         person.setFirstLastName(dto.first_last_name());
         person.setSecondLastName(dto.second_last_name());
         return person;
+    }
+
+    public static ReniecCambio toEntityCambio(ReniecCambioResponse dto){
+        ReniecCambio cambio = new ReniecCambio();
+        cambio.setPrice(dto.price());
+        cambio.setDate(dto.date());
+        cambio.setBase_currency(dto.base_currency());
+        cambio.setQuote_currency(dto.quote_currency());
+        return cambio;
     }
 }

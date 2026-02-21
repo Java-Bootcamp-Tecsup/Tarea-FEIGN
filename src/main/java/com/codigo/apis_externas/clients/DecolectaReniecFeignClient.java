@@ -1,5 +1,6 @@
 package com.codigo.apis_externas.clients;
 
+import com.codigo.apis_externas.dto.ReniecCambioResponse;
 import com.codigo.apis_externas.dto.ReniecDniResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,4 +13,8 @@ public interface DecolectaReniecFeignClient {
     @GetMapping("/v1/reniec/dni")
     ReniecDniResponse consultarDni(@RequestParam("numero") String numero,
                                    @RequestHeader("Authorization") String authorization);
+
+    @GetMapping("/v1/tipo-cambio/sbs/accounting")
+    ReniecCambioResponse consultarCurrency(@RequestParam("currency") String currency,
+                                           @RequestHeader("Authorization") String authorization);
 }
