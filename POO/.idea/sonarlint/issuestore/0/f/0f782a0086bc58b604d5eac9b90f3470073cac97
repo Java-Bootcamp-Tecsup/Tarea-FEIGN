@@ -1,24 +1,0 @@
-
-m
-java:S1301"KReplace this "switch" statement by "if" statements to increase readability.(šŞıÓûÿÿÿÿ8ãÎÍ®º3
-A
-java:S1659"Declare "b" on a separate line.(ù˜ËÑıÿÿÿÿ8éÎÍ®º3
-L	java:S106"+Replace this use of System.out by a logger.(¾šüöüÿÿÿÿ8êÎÍ®º3
-L	java:S106	"+Replace this use of System.out by a logger.(÷Æûÿÿÿÿ8êÎÍ®º3
-F	java:S106"+Replace this use of System.out by a logger.(×ƒÀ#8êÎÍ®º3
-G	java:S106"+Replace this use of System.out by a logger.(Ûç¶8ëÎÍ®º3
-G	java:S106"+Replace this use of System.out by a logger.(êïñŠ8ëÎÍ®º3
-L	java:S106"+Replace this use of System.out by a logger.(¬Ùâ†ıÿÿÿÿ8ëÎÍ®º3
-G	java:S106"+Replace this use of System.out by a logger.(¡Ò×ó8ìÎÍ®º3
-L	java:S106"+Replace this use of System.out by a logger.(ûò¶Òûÿÿÿÿ8ìÎÍ®º3
-L	java:S106""+Replace this use of System.out by a logger.(´Šõÿøÿÿÿÿ8ìÎÍ®º3
-L	java:S106$"+Replace this use of System.out by a logger.(Ô‡æ…ùÿÿÿÿ8íÎÍ®º3
-F	java:S106+"+Replace this use of System.out by a logger.(”˜Ô8ƒ±Î®º3
-L	java:S106,"+Replace this use of System.out by a logger.(îŞ–’şÿÿÿÿ8á¡Ï®º3
-L	java:S106-"+Replace this use of System.out by a logger.(ñÇïÄÿÿÿÿÿ8³•Ğ®º3
-L	java:S106/"+Replace this use of System.out by a logger.(¬’šÄıÿÿÿÿ8õ»Ò®º3
-G	java:S1062"+Replace this use of System.out by a logger.(ÂÒÌ›8Ûê¶¯º3
-L	java:S1066"+Replace this use of System.out by a logger.(§ùğüÿÿÿÿ8Ûê¶¯º3
-G	java:S1067"+Replace this use of System.out by a logger.(şÕšû8Üê¶¯º3
-G	java:S1068"+Replace this use of System.out by a logger.(Ñ¨ï¼8Üê¶¯º3
-L	java:S106:"+Replace this use of System.out by a logger.(êÓæøùÿÿÿÿ8İê¶¯º3
