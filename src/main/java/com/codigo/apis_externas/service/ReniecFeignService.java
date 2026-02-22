@@ -9,9 +9,10 @@ import com.codigo.apis_externas.model.ReniecPerson;
 import com.codigo.apis_externas.repository.ReniecCambioRepository;
 import com.codigo.apis_externas.repository.ReniecPersonRepository;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+//import org.slf4j.Logger;
+//import org.slf4j.LoggerFactory;
 
 
 @Service
@@ -19,6 +20,7 @@ public class ReniecFeignService{
     private final DecolectaReniecFeignClient feignClient;
     private final ReniecPersonRepository personRepository;
     private final ReniecCambioRepository cambioRepository;
+    // private static final Logger logger = LoggerFactory.getLogger(ReniecFeignService.class);
 
     @Value("${decoleta.token}") // Se usa para inyectar un valor de mis properties
     private String token;
@@ -39,6 +41,7 @@ public class ReniecFeignService{
                     String auth = "Bearer " + token;
                     ReniecDniResponse dto = feignClient.consultarDni(dni,auth);
                     ReniecPerson entity = ReniecMapper.toEntity(dto);
+
                     return personRepository.save(entity);
                 });
     }
@@ -50,6 +53,8 @@ public class ReniecFeignService{
                     String auth = "Bearer " + token;
                     ReniecCambioResponse dto = feignClient.consultarCurrency(currency,auth);
                     ReniecCambio entity = ReniecMapper.toEntityCambio(dto);
+                    entity.setCurrency(currency);
+
                     return cambioRepository.save(entity);
                 });
     }

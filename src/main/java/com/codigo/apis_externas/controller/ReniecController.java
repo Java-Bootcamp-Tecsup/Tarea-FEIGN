@@ -23,7 +23,7 @@ public class ReniecController {
         return reniecFeignService.consultarYGuardar(dni);
     }
 
-    @GetMapping("/feign/{currency}")
+    @GetMapping("/feign/cambio/{currency}")
     public ReniecCambio feignCambio(@PathVariable String currency){
         return reniecFeignService.consultarYGuardarCambio(currency);
     }

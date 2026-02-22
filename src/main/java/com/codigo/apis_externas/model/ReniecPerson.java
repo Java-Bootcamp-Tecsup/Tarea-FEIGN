@@ -7,6 +7,9 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "reniec_person")
 public class ReniecPerson{
+    // En Jvaa si defines la variable como camelCase, al momento de crear la tabla
+    // JPA crea las columnas con -  eVillarroel -> e_villarroel
+    // Siempre ocurre, es un estandar
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
